@@ -1,5 +1,61 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+   padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+
+
+
+/*Se usara la metodologia de mobile firts*/
+
+/* Estilos para el meno de navegacion*/
+
+.header{
+	background-color: red;
+	display: flex;
+	flex-direction: column; /*Para que el titulo y elos sub menus esten uno debajo del otro*/
+	align-items: center;	
+}
+
+.header__menu{
+	padding: .5rem 0rem;
+}
+
+.header__menu, 
+.header__menu--list{
+	display: flex; /* organizo los elementos uno al lado del otro */
+}
+
+.header__menu--list li a, .header__menu--button a{
+	color: white;           /*Color a cada uno de los submenus */
+	margin: 0rem .5rem;       /*separar las secciones un poco*/
+	font-size: 1.3rem;         /*que lase secciones sean un poco mas grandes*/
+	font-weight: 700;
+}
+
+.header__tittle h1 a{
+	color: #ededed;
+	text-decoration: none;
+}
+
+.nav__input,
+.nav__img{  /* Oculto el check box y de paso tambien el hamburguer*/
+	display: none;
+}
+
+
+.header__menu{
+	position: sticky;
+	background-color: red;
+	width: 100%;
+}
+
+
+
+/*Animaciones para cuando pase el cursor */
+.header__menu--list li a:hover, .header__menu--button a:hover{
+	color: black;   /* para que se cambie de color al colocar el cursor*/
 }
