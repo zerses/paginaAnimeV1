@@ -2,7 +2,7 @@
 
 main{
 	background-color: #ededed;
-   padding: 1rem 5vw;
+	padding: 1rem 3vw;
 	/* border: 2px solid black; */
 }
 
@@ -16,11 +16,11 @@ main{
 
 .cards--anime{
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(160px, 200px));
 	justify-content: center;
 	align-items: center;
 	text-align: center; /*centro las letras de cada card*/
-	gap: 1rem .1rem;
+	gap: 1.2rem 1.2rem;
 }
 
 /*para que las imagenes no se me desborden de manera presipitada*/
@@ -28,13 +28,21 @@ main{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 360px;
-	/* border: 2px solid rebeccapurple; */
-	
+	height: 345px;
+	/* background-color: black;
+	color: white; */
+	border: 1px solid silver;
+	box-shadow: 0px 0px 4px 1px silver;
+}
+
+.card:hover{
+	cursor: pointer;
+	transform: scale(1.18, 1.08);
+	background-color: #ededed; /* Para que no quede trasparente */
 }
 
 .card__tittle{
-	height: 60px;
+	height: 45px;
 }
 
 .card__tittle{
@@ -100,6 +108,38 @@ main{
 /* acomodar el main para pantallas mas chicas */
 
 @media (max-width:800px){
+	.card{
+		height: 325px;
+	}
+
+	.card:hover{
+		transform: none;
+	}
+
+	.cards--anime{
+		gap: 1rem .5rem;
+		grid-template-columns: repeat(auto-fill, minmax(150px, 185px));
+	}
+
+	.card__tittle{
+		height: 35px;
+	}
+
+	.card__tittle h3{
+		font-size: .9rem;
+	}
+
+	.card__information p{
+		font-size: .7rem;
+	}
+
+	.card__img--figure{
+		width: 200px;
+		height: 260px;
+	}
+
+
+
 	.intro{
 		margin: 0 .5rem;
 	}
@@ -108,4 +148,49 @@ main{
 		padding: 1rem 0rem;
 	}
 
+}
+
+
+@media (max-width:380px){
+	.cards--anime{
+		gap: 1rem .4rem;
+		grid-template-columns: repeat(auto-fill, minmax(135px, 160px));
+	}
+	.card{
+		height: 295px;
+	}
+
+	.card__img--figure{
+		width: 200px;
+		height: 230px;
+	}
+
+}
+
+/* @media (max-width:376px){
+	.cards--anime{
+		grid-template-columns: repeat(auto-fill, minmax(135px, 175px));
+	}
+} */
+
+@media (max-width:360px){
+	.cards--anime{
+		gap: 1rem .4rem;
+		grid-template-columns: repeat(auto-fill, minmax(135px, 165px));
+	}
+
+	.card{
+		height: 325px;
+	}
+
+	.card__img--figure{
+		width: 200px;
+		height: 260px;
+	}
+}
+
+@media (max-width:340px){
+	.cards--anime{
+		grid-template-columns: repeat(auto-fill, minmax(135px, 200px));
+	}
 }
