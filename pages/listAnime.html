@@ -2,6 +2,8 @@
 <html lang="es">
 
 <head>
+	<link rel="stylesheet" type="text/css" href="../styles/header.css">
+	<link rel="stylesheet" type="text/css" href="../styles/reset.css">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +12,32 @@
 
 <body>
 	<header>
-		<div>
-			<h1><a href="../index.html">AnimeBDRip</a></h1>
-		</div>
-		<ul>
-			<li><a href="../index.html">Inicio</a></li>
-			<li><a href="list-anime.html">Lista Anime</a></li>
-			<li><a href="manga.html">Manga</a></li>
-			<li><a href="films.html">Peliculas</a></li>
-			<li><a href="contact.html">Contacto</a></li>
-		</ul>
 
-		<a href="getInto.html">Ingresar</a>
-		<a href="register.html">Registrase</a>
+		<nav class="nav">
+			<div class="nav__container">
+				<h1 class="nav__logo"><a href="../index.html" id="tittle">AnimeBDRip</a></h1>
+
+				<!--Aca irá el icono para desplegar el menu en dispositivos moviles-->
+				<label for="menu" class="nav__label">
+					<img src="assets/menuHamburguer.svg" alt="menu" class="nav__img">
+				</label>
+				<input type="checkbox" id="menu" class="nav__input">
+
+				<div class="nav__menu">
+
+					<a href="../index.html">Inicio</a>
+					<a href="listAnime.html">Lista Animes</a>
+					<a href="manga.html">Manga</a>
+					<a href="films.html">Peliculas</a>
+					<a href="contact.html">Contacto</a>
+
+
+					<a href="">Ingresar</a>
+					<a href="">Registrase</a>
+				</div>
+			</div>
+		</nav>
+
 	</header>
 
 	<main>
