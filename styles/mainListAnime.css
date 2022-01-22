@@ -1,0 +1,24 @@
+main{
+    padding: 2rem 2rem;
+    margin: 0% 20%;
+    background-color: #ededed;
+}
+.listAnime{
+    text-align: center;
+}
+
+
+
+/* .listAnime__a--animes{
+    margin:0% 20%;
+} */
+
+.listAnime__a--animes li{
+    padding: .2rem;
+}
+
+.listAnime__a--animes li:nth-child(even),
+.listAnime__a--animes a{
+    background-color: black;
+    color: white;
+}
