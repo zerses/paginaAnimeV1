@@ -1,24 +1,128 @@
+:root{
+    /*Fondo de los elementos*/
+    /*
+    #686D76;
+    #48cae8;
+    #d9d9d9; un poco mas oscuro que el ededed
+    #2d84e7; azul
+    #355baf; azul oscuro
+    #1c6fad; azul un poco mas claro
+    #343a40; gris oscuro
+    */
+    --primer: #00000;
+    --segundo: #ffff;
+    --tercero: #ededed;
+    --tittle: rgb(255, 0, 0);
+}
+
 main{
     padding: 2rem 2rem;
-    margin: 0% 20%;
-    background-color: #ededed;
+    margin: 1% 10%;
+    background-color: var(--tercero);
 }
 .listAnime{
     text-align: center;
+    font-size: 2rem;
+}
+
+/*Estilos para los titulos de las letras de cada seccion*/
+
+.listAnime__tittle--letra{
+    margin: 1rem 0rem;
+    font-size: 4rem;
+    color: var(--tittle);
+    text-decoration: underline rgb(0, 0, 0);
+}
+
+/*Estilos de las listas de los animes*/
+
+.listAnime__animes li{
+    margin: .1rem 20rem;
+    border-radius: 8px;
+    padding: .2rem 0rem;
+    display: flex;
+}
+
+.listAnime__animes li:nth-child(even){
+    background-color: #686D76;;
+}
+
+.listAnime__animes a{
+    color: var(--primer);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0 auto;
+}
+
+.listAnime__animes li:nth-child(even) a{
+    color: var(--segundo);
+}
+
+.listAnime__animes li:hover {
+    background-color: #343a40;
+    color: var(--segundo);
+    cursor: pointer;
+}
+
+/*Parte del responsive designe*/
+
+@media (max-width:1650px){
+
+    .listAnime__animes li{
+        margin: .1rem 10rem;
+    }
+}
+
+@media (max-width:1250px) {
+
+    main{
+        margin: 1% 5%;
+    }
+}
+
+@media (max-width:1130px){
+
+    main{
+        margin: 1% 0%;
+    }
 }
 
 
-
-/* .listAnime__a--animes{
-    margin:0% 20%;
-} */
-
-.listAnime__a--animes li{
-    padding: .2rem;
+@media (max-width:1050px) {
+    
+    .listAnime__animes li{
+        margin: .1rem 7rem;
+    }
 }
 
-.listAnime__a--animes li:nth-child(even),
-.listAnime__a--animes a{
-    background-color: black;
-    color: white;
+@media (max-width:830px) {
+    
+    .listAnime__animes li{
+        margin: .1rem 3rem;
+    }
+}
+
+@media (max-width:650px) {
+    
+    .listAnime__animes li{
+        margin: .1rem 1rem;
+    }
+}
+
+@media (max-width:500px) {
+    
+    .listAnime__animes li{
+        margin: .1rem 0rem;
+    }
+
+    .listAnime__animes a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:375px) {
+    
+    main{
+        padding: 2rem 1rem;
+    }
 }
