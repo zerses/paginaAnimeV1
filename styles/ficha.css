@@ -9,11 +9,24 @@
     #343a40; gris oscuro
     */
 
+body{
+    background-color: #d9d9d9;
+}
+
+header{
+    margin-bottom: 1rem;
+}
+
+footer{
+    margin-top: 2rem;
+}
+
 main{
     background-color: #ededed;
     /* margin: 0rem 4rem; */ /*cuadrar al rato*/
+    margin: 0% 20%;
     padding-top: 2rem;
-    margin: 0 20%;
+    box-shadow: 1px 1px 3px 1px black;
 }
 
 main > h2{  /* Para que solo sea a su hijo directo*/
@@ -30,6 +43,8 @@ main > h2{  /* Para que solo sea a su hijo directo*/
     background-color: #1f2225;
     color: white;
     margin: 0rem 2rem 4rem 2rem;
+    box-shadow: 1px 1px 5px 1px rgb(0, 0, 0);
+    border: 1px solid #ededed;
 }
 
 .info__imgPortada{
@@ -62,6 +77,7 @@ main > h2{  /* Para que solo sea a su hijo directo*/
     flex-direction: column;
     border-left: 2px solid white;
     padding: 4rem 1rem;
+    
 }
 
 .info__ficha--datos{
@@ -291,6 +307,10 @@ main > h2{  /* Para que solo sea a su hijo directo*/
     .donwload__table th:nth-child(2),
     .donwload__table td:nth-child(2){
         display: none;
+    }
+
+    footer{
+        margin-top: 0rem;
     }
 }
 
